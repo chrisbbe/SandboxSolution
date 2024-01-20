@@ -27,6 +27,7 @@ public sealed class PostgreSqlContainerTest : IAsyncLifetime
         command.Connection = connection;
         command.CommandText = "SELECT 1";
 
-        command.ExecuteNonQuery();
+        var result = command.ExecuteScalar();
+        Assert.Equal(1, result);
     }
 }
