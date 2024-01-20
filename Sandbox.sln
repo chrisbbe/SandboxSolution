@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.WebApi", "Sandbox.WebApi\Sandbox.WebApi.csproj", "{9086A75F-0D76-4876-AA42-DA55BA3EDD90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.WebApi.Tests", "Sandbox.WebApi.Tests\Sandbox.WebApi.Tests.csproj", "{935FCE8E-390A-4904-8EA7-D8D9FD5E4216}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9086A75F-0D76-4876-AA42-DA55BA3EDD90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9086A75F-0D76-4876-AA42-DA55BA3EDD90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9086A75F-0D76-4876-AA42-DA55BA3EDD90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9086A75F-0D76-4876-AA42-DA55BA3EDD90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{935FCE8E-390A-4904-8EA7-D8D9FD5E4216}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{935FCE8E-390A-4904-8EA7-D8D9FD5E4216}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{935FCE8E-390A-4904-8EA7-D8D9FD5E4216}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{935FCE8E-390A-4904-8EA7-D8D9FD5E4216}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
