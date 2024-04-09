@@ -31,7 +31,7 @@ jobs:
       - name: 🚀 Build NuGet
         run: dotnet pack --configuration Release Sandbox.Tools/Sandbox.Tools.csproj -o .
 
-      - name: 🌐 Setup GitHub Packages NuGet source
+      - name: 🛠️ Setup GitHub Packages NuGet source
         run: dotnet nuget add source --username USERNAME --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/chrisbbe/index.json"
 
       - name: 🌐 Push NuGet package live
