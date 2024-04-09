@@ -1,0 +1,32 @@
+﻿name: Build, Package & Release
+
+on:
+  workflow_dispatch:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    name: Build Sandbox.Tools
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: 📄 Checkout
+        uses: actions/checkout@v3
+
+      - name: 🛠️ Setup .NET SDK
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: 🛠️ Restore NuGet packages
+        run: dotnet restore
+
+      - name: 🚀 Build Solution
+        run: dotnet build --configuration Release
+
+      - name: 👟 Run tests
+        run: dotnet test
+
+      - name: 🚀 Build NuGet
+        run: dotnet pack --configuration Release Sandbox.Tools/Sandbox.Tools.csproj -o .
