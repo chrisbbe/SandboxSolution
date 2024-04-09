@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.WebApi", "Sandbox.W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.WebApi.Tests", "Sandbox.WebApi.Tests\Sandbox.WebApi.Tests.csproj", "{935FCE8E-390A-4904-8EA7-D8D9FD5E4216}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox.Tools", "Sandbox.Tools\Sandbox.Tools.csproj", "{7880D142-39E9-4AC8-9A87-D6460D6879C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{935FCE8E-390A-4904-8EA7-D8D9FD5E4216}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{935FCE8E-390A-4904-8EA7-D8D9FD5E4216}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{935FCE8E-390A-4904-8EA7-D8D9FD5E4216}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7880D142-39E9-4AC8-9A87-D6460D6879C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7880D142-39E9-4AC8-9A87-D6460D6879C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7880D142-39E9-4AC8-9A87-D6460D6879C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7880D142-39E9-4AC8-9A87-D6460D6879C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
