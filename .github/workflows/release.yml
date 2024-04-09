@@ -1,6 +1,7 @@
-name: Build, Package & Release GuidOne library
+name: Build, Package & Release
 
 on:
+  workflow_dispatch:
   release:
     types: [published]
 
