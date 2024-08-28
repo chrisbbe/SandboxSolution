@@ -2,8 +2,6 @@
 
 on:
   workflow_dispatch:
-  release:
-    types: [ published ]
 
 jobs:
   build:
@@ -36,3 +34,10 @@ jobs:
 
       - name: 🌐 Push NuGet package live
         run: dotnet nuget push Sandbox.Tools.1.0.${{ github.run_number }}.nupkg --source "github"
+      
+      - name: "Make Release"
+        uses: ncipollo/release-action@v1
+        with:
+          name: "Foo"
+          tag: Cloud${{ vars.IS_PRERELEASE == true && '.Beta' }}-${{ vars.VERSION }}
+          generateReleaseNotes: true
