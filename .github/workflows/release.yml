@@ -39,5 +39,5 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           name: "Foo"
-          tag: Cloud${{ vars.IS_PRERELEASE == true && '.Beta' || '' }}-${{ vars.VERSION }}
+          tag: Cloud${{ vars.IS_PRERELEASE == 'true' && '.Beta' || '' }}-${{ vars.VERSION }}
           generateReleaseNotes: true
